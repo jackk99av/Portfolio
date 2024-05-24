@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ece9e6, #50577c);
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.contact-info,
+.contact-form {
+  background-color: #7091e6;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: scale(1.02);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #3a3838;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background: #20948B;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 2%;
+  box-sizing: border-box;
+}
+
+.navbar .navbar-brand,
+.navbar-nav li a {
+  color:#05386B;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  float: left;
+  padding: 0;
+  width: 150px;
+  cursor: pointer;
+  margin-left: 2%;
+  float: left;
+  padding: 15px,0px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  
+}
+
+.navbar-nav li {
+  margin: 0 15px;
+  justify-items: flex-end;
+  display: flex;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: -3%;
+  color:#05386B;
+  transition: .3s ease;
+}
+
+.navbar-nav li a:hover {
+color: #e66e0c !important;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.btn-primary {
+  background-color: #20948B;
+  border-color: #20948B;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #196c66;
+  transform: translateY(-2px);
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #20948B;
+  box-shadow: 0 0 5px rgba(32, 148, 139, 0.5);
+}
+
+
+.container-fluid{
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar .ul .li a.active {
+  color: #affdb9; /* Example color for active link */
+  text-decoration: chocolate;
+}

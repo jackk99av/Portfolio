@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("paper.gif");
+}
+.h1{
+  margin:0;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+.logo{
+  margin: 0;
+  width:200px;
+  height: 150px;
+}
+.main{
+  width:100%;
+  background: url(img/pawel.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+}
+  .navbar{
+    width:100%;
+    display: flex;
+    margin:auto;
+    padding: 10px 2%;
+    align-items: center;
+    justify-content: space-between;
+    background:#20948B;
+    transition: .3s ease;
+  }
+  .navbar.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 2%;
+    float: left;
+    padding: 15px,0px;
+  }
+
+  .navbar .ul .li a.active {
+    color: #fff; 
+        background-color: #0b4b8b; 
+        border-radius: 5px;
+        padding: 8px 15px; 
+  }
+
+  .ul .li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+  }
+
+  .ul .li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -3%;
+    color:#05386B;
+    transition: .3s ease;
+    
+  }
+
+  @keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(4%);
+        opacity: 3;
+    }
+}
+
+.animated-text {
+    animation: slideIn 60s ease-in-out;
+    
+}
+  
+  .info span{
+    color:rgb(214, 71, 14);
+
+
+  }
+  .li a:hover{
+    color:rgb(219, 115, 115);
+    text-decoration: underline solid;
+  }
+
+  .h1{
+    text-transform: uppercase;
+    font-size: larger;
+  }
+
+  .info{
+    margin-left:10%;
+    margin-top:  10%; 
+    text-size-adjust: 32px;font-size: x-large;
+    
+  }
+  .info h3{
+    padding-bottom: 40px;
+  }
+   .info h1 {
+    text-decoration: underline;
+   }
+
+   .button{
+    position: absolute;
+    background-color:#0693e3;
+    border-radius: 5px;
+    min-width: 120px;
+    min-height: 30px;
+    padding: 13px;
+    margin: 150px;
+   font-family: sans-serif;
+   font-size: larger;
+   box-shadow: 0px 0px 1px 2px rgb(161, 147, 147);
+   }
+
+   .button:hover{
+    background-color:#5d94b4;
+    transition: 0.6s;
+   }
+
+   .button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 1px #4175b1;
+    transition: 0.5s;
+}
+.button:active {
+  background-color: #ee0f0f;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+}

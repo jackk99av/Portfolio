@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8f7958;
+  color: #333;
+  background-image: url(/img/pawel.jpg);
+  background-size: cover;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 10px 2%;
+  background:#20948B;
+  z-index: 1000;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+}
+header .navbar img {
+  height: 60px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  padding: 0 20px;
+}
+header a {
+  color: #171585;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+header .highlight, header .current a {
+  color: #f7f7fa;
+}
+/* Hover effect removed */
+header a:hover {
+  color: #1916e0;
+  font-weight: bold;
+} */
+#showcase {
+  min-height: 400px;
+  background: url('showcase.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: #0e41e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; /* Offset for fixed header */
+}
+#showcase h1 {
+  font-size: 55px;
+  margin: 0;
+  text-transform: uppercase;
+}
+#showcase p {
+  font-size: 24px;
+}
+.project {
+  background: #e75816;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e8491d;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.project:hover {
+  transform: translateY(-15px);
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 150px;
+  margin-right: 20px;
+}
+.project-details {
+  flex: 2 1 300px;
+}
+.project h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.project p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  header .navbar {
+      flex-direction: column;
+  }
+  header li {
+      padding: 10px 0;
+  }
+  .project {
+      flex-direction: column;
+  }
+  .project img {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+.navbar ul li a.current {
+color: #fff; 
+background-color: #0b4b8b; 
+border-radius: 5px;
+padding: 10px 10px;
+width: 100%;
+}

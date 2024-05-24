@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact Me</title>
+      <link rel="stylesheet" type="text/css" href="stylest.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url(/img/pawel.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #3d3a3a;
+            margin: 0;
+         }
+         .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 60px;
+         }
+         .contact-info, .contact-form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 90px;
+            transition: transform 0.3s ease;
+         }
+         .contact-info:hover, .contact-form:hover {
+            transform: scale(1.1);
+         }
+         h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+         }
+         h2 {
+            font-size: 24px;
+            color: #3a3838;
+            margin-bottom: 20px;
+            text-decoration: underline;
+         }
+         p {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px;
+         }
+         .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background:#20948B;
+            color: rgb(12, 73, 187);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+         }
+         .navbar-brand {
+            margin: auto;
+            padding: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+         }
+         .navbar-nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+         }
+         .navbar-nav li {
+            margin: 0 15px;
+         }
+         .navbar-nav li a {
+          color:#05386B;
+         }
+         .navbar-nav li a:hover {
+            color: #d17620 !important;
+            text-decoration: none;
+         }
+         .navbar-nav li a.active {
+            color: #fff;
+            background-color: #2872bb;
+            border-radius: 5px;
+            padding: 8px 15px;
+         }
+         footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+         }
+         .btn-primary {
+            background-color: #20948B;
+            border-color: #20948B;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+         }
+         .btn-primary:hover {
+            background-color: #196c66;
+            transform: translateY(-2px);
+         }
+         .form-group input, .form-group textarea {
+            border: 1px solid #110f0f;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+         }
+         .form-group input:focus, .form-group textarea:focus {
+            border-color: #638b88;
+            box-shadow: 0 0 5px rgba(32, 148, 139, 0.5);
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="navbar">
+            <img src="/img/jw.png.png" width="100" height="100" class="navbar-brand"> 
+            <ul class="navbar-nav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="/skills/skills.html">Skills</a></li>
+               <li><a href="/my work/my work.html">My Work</a></li>
+               <li><a href="/about/about.html">About</a></li>
+               <li><a href="/contact/contact.html" class="active">Contact</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="container">
+         <div class="contact-info">
+            <h1>Contact Me</h1>
+            <h2>Jackson Wachira</h2>
+            <p><strong>Email:</strong> <i class="glyphicon glyphicon-envelope"></i> jacksonwachiramwagira@gmail.com</p>
+            <p><strong>Phone:</strong> <i class="fa fa-phone"></i> +254 740-026-528</p>
+            <p><strong>Address:</strong> Nairobi, Kenya</p>
+            <p>Feel free to reach out via email or phone. Looking forward to hearing from you!</p>
+         </div>
+         <div class="contact-form">
+            <h2>Send me a message</h2>
+            <form>
+               <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+               </div>
+               <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+               </div>
+               <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+         </div>
+      </div>
+      <footer>&copy; 2024 Jackson Wachira</footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </body>
+</html>
